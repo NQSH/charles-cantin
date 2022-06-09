@@ -22,7 +22,7 @@ collections:
             - { label: "Description", name: "description", widget: "text"}
   - name: "photos"
     label: "Photos"
-    folder: "photos/"
+    folder: "pages/api/photos/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "posts/{{slug}}"
