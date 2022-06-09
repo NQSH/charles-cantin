@@ -20,3 +20,13 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
+  - name: "articles"
+    label: "Articles"
+    fields:
+    - label: "Photo"
+      name: "photo"
+      widget: list
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Image", name: "image", widget: "image" }
+        - { label: "Category", name: "category", widget: "string" }
