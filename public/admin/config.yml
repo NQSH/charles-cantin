@@ -20,17 +20,23 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
-  - name: "data"
-    label: "Data"
-    files:
-    - label: "Photo"
-      name: "photo"
-      file: "content/photo.md"
-      fields:
-        - label: "Photos"
-          name: "photos"
-          widget: list
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Image", name: "image", widget: "image" }
-            - { label: "Category", name: "category", widget: "string" }
+  - name: "photos"
+    label: "Photos"
+    folder: "photos/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "posts/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Category", name: "category", widget: "string" }
+  # - name: "categories"
+  #   label: "Categories"
+  #   files:
+  #   - label: "Photo"
+  #     name: "photo"
+  #     file: "content/photo.md"
+  #     fields:
+  #       - { label: "Title", name: "title", widget: "string" }
+  #       - { label: "Image", name: "image", widget: "image" }
+  #       - { label: "Category", name: "category", widget: "string" }
