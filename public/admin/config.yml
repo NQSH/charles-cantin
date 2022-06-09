@@ -22,7 +22,7 @@ collections:
             - { label: "Description", name: "description", widget: "text"}
   - name: "articles"
     label: "Articles"
-    fields:
+    files:
     - label: "Photo"
       name: "photo"
       widget: list
